@@ -1,0 +1,21 @@
+# SPDX-FileCopyrightText: 2026 Saver310 <antekoszukaniec1@gmail.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: entity
+  parent: BasePDACartridge
+  id: ZappkaCartridge
+  name: kartridż Żappka
+  description: Opis lolololo
+  components:
+  - type: Sprite
+    sprite: _Polonium/Objects/Devices/cartridge.rsi
+    state: cart-zapp
+  - type: UIFragment
+    ui: !type:NotekeeperUi
+  - type: Cartridge
+    programName: zappka-program-name
+    icon:
+      sprite: _Polonium/Interface/Misc/program_icons.rsi
+      state: zappka
+  - type: NotekeeperCartridge
