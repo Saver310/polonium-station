@@ -11,6 +11,18 @@
             "name": "icon"
         },
         {
+            "name": "icon_open"
+        },
+        {
+            "name": "fill-1"
+        },
+        {
+            "name": "fill-2"
+        },
+        {
+            "name": "fill-3"
+        },
+        {
             "name": "equipped-HELMET",
             "directions": 4
         },
@@ -19,7 +31,39 @@
             "directions": 4
         },
         {
+            "name": "inhand-left_open",
+            "directions": 4
+        },
+        {
+            "name": "inhand-left-fill-1",
+            "directions": 4
+        },
+        {
+            "name": "inhand-left-fill-2",
+            "directions": 4
+        },
+        {
+            "name": "inhand-left-fill-3",
+            "directions": 4
+        },
+        {
             "name": "inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "inhand-right_open",
+            "directions": 4
+        },
+        {
+            "name": "inhand-right-fill-1",
+            "directions": 4
+        },
+        {
+            "name": "inhand-right-fill-2",
+            "directions": 4
+        },
+        {
+            "name": "inhand-right-fill-3",
             "directions": 4
         }
     ]
