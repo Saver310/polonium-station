@@ -95,3 +95,49 @@
     - Stir
   - type: Clothing
     sprite: _Polonium/Objects/Fun/Plushies/deathshead.rsi
+
+- type: entity
+  parent: [DrinkVisualsAllFilled, DrinkBottleGlassBase]
+  id: DrinkBottleAceDeathshead
+  name: pluszak Asa Trupiogłowego
+  description: Puszysty pluszak przypominający pewnego barmana ćmę. Waży całkiem dużo jak na pluszaka.
+  components:
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left_open
+      right:
+      - state: inhand-right_open
+  - type: Sprite
+    sprite: _Polonium/Objects/Fun/Plushies/deathshead.rsi
+  - type: GenericVisualizer
+    visuals:
+      enum.OpenableVisuals.Opened:
+        enum.OpenableVisuals.Layer:
+          True: {state: "icon_open"}
+          False: {state: "icon"}
+    layers:
+    - state: icon
+      map: ["enum.OpenableVisuals.Layer"]
+    - state: fill-3
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: SolutionContainerVisuals
+    maxFillLevels: 3
+  - type: ExaminableSolution
+    examinableWhileClosed: false
+    heldOnly: true
+
+- type: entity
+  parent: DrinkBottleAceDeathshead
+  id: DrinkAceDeathsheadBottleFull
+  suffix: Full
+  components:
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Whiskey
+        Quantity: 20
+      - ReagentId: DrGibb
+        Quantity: 60
+      - ReagentId: Ice
+        Quantity: 40

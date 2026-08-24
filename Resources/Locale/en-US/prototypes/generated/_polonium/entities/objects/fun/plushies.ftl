@@ -5,3 +5,5 @@ ent-ItanKioGoBoom = Pluszak Itan-Kio
     .suffix = BOMBA, NIE MAPOWAĆ
 ent-PlushieMothDeathshead = pluszak Asa Trupiogłowego
     .desc = Puszysty pluszak przypominający pewnego barmana ćmę. Widnieje na nim mały napis "Nie dawać whiskey po północy".
+ent-DrinkBottleAceDeathshead = pluszak Asa Trupiogłowego
+    .desc = Puszysty pluszak przypominający pewnego barmana ćmę. Waży całkiem dużo jak na pluszaka.
