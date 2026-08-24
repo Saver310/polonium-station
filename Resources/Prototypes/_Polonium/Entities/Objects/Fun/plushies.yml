@@ -102,6 +102,12 @@
   name: pluszak Asa Trupiogłowego
   description: Puszysty pluszak przypominający pewnego barmana ćmę. Waży całkiem dużo jak na pluszaka.
   components:
+  - type: GenericVisualizer
+    visuals:
+      enum.OpenableVisuals.Opened:
+        enum.OpenableVisuals.Layer:
+          True: {state: "icon_open"} # lid off
+          False: {state: "icon"} # lid on
   - type: Item
     inhandVisuals:
       left:
@@ -110,12 +116,6 @@
       - state: inhand-right_open
   - type: Sprite
     sprite: _Polonium/Objects/Fun/Plushies/deathshead.rsi
-  - type: GenericVisualizer
-    visuals:
-      enum.OpenableVisuals.Opened:
-        enum.OpenableVisuals.Layer:
-          True: {state: "icon_open"}
-          False: {state: "icon"}
     layers:
     - state: icon
       map: ["enum.OpenableVisuals.Layer"]
