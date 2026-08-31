@@ -1,0 +1,61 @@
+- type: gameMap
+  id: Outpost31
+  mapName: 'Outpost 31'
+  mapPath: /Maps/_Polonium/outpost31.yml
+  minPlayers: 0
+  maxPlayers: 24
+  stations:
+    Outpost31:
+      stationProto: StandardNanotrasenStation
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Outpost 31'
+        - type: StationEmergencyShuttle
+          emergencyShuttlePath: /Maps/Shuttles/emergency.yml
+        - type: StationJobs
+          availableJobs:
+            #central command
+            NanotrasenRepresentative: [ 1, 1 ] # Polonium
+            NanotrasenCareerTrainer: [ 2, 2 ] # Polonium, whitelistowana rola
+            #command
+            Captain: [ 1, 1 ]
+            HeadOfPersonnel: [ 1, 1 ] # Polonium
+            HeadOfSecurity: [ 1, 1 ]
+            ChiefEngineer: [ 1, 1 ] # Polonium
+            ChiefMedicalOfficer: [ 1, 1 ] # Polonium
+            Quartermaster: [ 1, 1 ] # Polonium
+            ResearchDirector: [ 1, 1 ] # Polonium
+            #security
+            SecurityOfficer: [ 1, 2 ]
+            SecurityCadet: [ 1, 1 ]
+            Brigmedic: [ 1, 1 ] # Polonium
+            Warden: [ 1, 1 ] # Polonium
+            #cargo
+            CargoTechnician: [ 1, 1 ]
+            SalvageSpecialist: [ 1, 1 ]
+            #medical
+            MedicalDoctor: [ 1, 1 ]
+            MedicalIntern: [ 1, 1 ] # Polonium
+            Paramedic: [ 1, 1 ] # Polonium
+            Psychologist: [ 1, 1 ] # Polonium
+            #engineering
+            StationEngineer: [ 1, 2 ]
+            TechnicalAssistant: [ 1, 1 ] # Polonium
+            #science
+            Scientist: [ 1, 1 ]
+            ResearchAssistant: [ 1, 1 ]
+            Borg: [ 1, 1 ]
+            #service
+            Bartender: [ 1, 1 ]
+            Botanist: [ 1, 1 ]
+            Chef: [ 1, 1 ]
+            ServiceWorker: [ 1, 1 ] # Polonium
+            Chemist: [ 1, 1 ]
+            Janitor: [ 1, 1 ]
+            Musician: [ 1, 1 ]
+            Passenger: [ -1, -1 ]
+            Clown: [ 1, 1 ]
+            Mime: [ 1, 1 ]
+            Lawyer: [ 1, 1 ] # Polonium
+            Chaplain: [ 1, 1 ] # Polonium
+
