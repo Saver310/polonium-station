@@ -4,7 +4,7 @@ meta:
   engineVersion: 289.0.0
   forkId: ""
   forkVersion: ""
-  time: 08/31/2026 09:24:03
+  time: 08/31/2026 10:46:14
   entityCount: 302
 maps:
 - 1
@@ -33,10 +33,6 @@ entities:
     - type: ChunkContainer
       chunkEntities: []
     - type: OccluderTree
-    - type: Gravity
-      gravityShakeSound: !type:SoundPathSpecifier
-        path: /Audio/Effects/alert.ogg
-      enabled: True
     - type: FootstepModifier
     - type: Parallax
     - type: MapGrid
@@ -52,6 +48,12 @@ entities:
           Oxygen: 21.824879
           Nitrogen: 82.10312
         immutable: True
+    - type: GravityShake
+      shakeTimes: 10
+    - type: Gravity
+      gravityShakeSound: !type:SoundPathSpecifier
+        path: /Audio/Effects/alert.ogg
+      enabled: True
   - uid: 2
     components:
     - type: MetaData
@@ -82,12 +84,13 @@ entities:
       dampingModifier: 0.25
     - type: ImplicitRoof
     - type: GridPathfinding
+    - type: FootstepModifier
+    - type: Parallax
+    - type: GravityShake
+      shakeTimes: 10
     - type: Gravity
       gravityShakeSound: !type:SoundPathSpecifier
         path: /Audio/Effects/alert.ogg
-      enabled: True
-    - type: FootstepModifier
-    - type: Parallax
   - uid: 3
     components:
     - type: MetaData
@@ -194,12 +197,11 @@ entities:
       dampingModifier: 0.25
     - type: ImplicitRoof
     - type: GridPathfinding
+    - type: FootstepModifier
+    - type: Parallax
     - type: Gravity
       gravityShakeSound: !type:SoundPathSpecifier
         path: /Audio/Effects/alert.ogg
-      enabled: True
-    - type: FootstepModifier
-    - type: Parallax
     - type: GridAtmosphere
       version: 2
       data:
@@ -786,6 +788,8 @@ entities:
     - type: GasTileOverlay
     - type: ExplosionAirtightGrid
     - type: RadiationGridResistance
+    - type: GravityShake
+      shakeTimes: 10
 - proto: AirlockBarGlassLocked
   entities:
   - uid: 293
